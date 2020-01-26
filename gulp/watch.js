@@ -19,6 +19,7 @@ const watch = ({ gulp, plugins, args, config, browserSync, taskTarget }) => {
       // Pug templates
       gulp.watch(
         [
+          `./${dir.source}/**/*.js`,
           `./${dir.source}/**/*.pug`,
           `./${dir.source}/${dir.data}/**/*.{json,yml,yaml}`
         ],
