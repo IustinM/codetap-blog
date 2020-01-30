@@ -1,0 +1,52 @@
+ <!DOCTYPE html><html><head><title>Codetap Blog is Awesome!</title><meta name="description" content="Finally, it's alive. Let's also hope I keep it updated"><link rel="stylesheet" href="/style.css"></head><body><welcome><h1 class="welcome__title">Codetap Blog is Awesome!</h1><p class="welcome__create-date"></p><p>Finally, it's alive. Let's also hope I keep it updated</p></welcome><input class="menu__hidden" type="checkbox" id="toggle-menu"><div class="menu__wrapper"><ul class="menu__list"><li class="menu__item"><a class="menu__link" href="/" title="IustinM blog is awesome">Home</a></li><li class="menu__item"><a class="menu__link" href="/how-to-become-a-old-developer-in-2020" title="How to become a web developer in 2018">Become a web developer</a></li><li class="menu__item"><a class="menu__link" href="/how-to-crush-it-in-3-steps-in-2020" title="How to Crush it in 3 steps in 2018?">Crush it</a></li></ul></div><label class="cb-menu" for="toggle-menu"></label><h2>This is my landing page</h2><p>I intend to do this blog using dynamic themes</p><ul><li><button class="theme_button" style="background-color: #7F8C8D" data-color-dark="#7F8C8D" data-color-normal="#95A5A6">cascade</button></li><li><button class="theme_button" style="background-color: #D35400" data-color-dark="#D35400" data-color-normal="#E67E22">zest</button></li><li><button class="theme_button" style="background-color: #F39C12" data-color-dark="#F39C12" data-color-normal="#F1C40F">buttercup</button></li><li><button class="theme_button" style="background-color: #2C3E50" data-color-dark="#2C3E50" data-color-normal="#34495E">pickled-bluewood</button></li><li><button class="theme_button" style="background-color: #8E44AD" data-color-dark="#8E44AD" data-color-normal="#9B59B6">wisteria</button></li><li><button class="theme_button" style="background-color: #27AE60" data-color-dark="#27AE60" data-color-normal="#2ECC71">shamrock</button></li><li><button class="theme_button" style="background-color: #16A085" data-color-dark="#16A085" data-color-normal="#1ABC9C">mountain-meadow</button></li><li><button class="theme_button" style="background-color: #2980b9" data-color-dark="#2980b9" data-color-normal="#3498db">curious-blue</button></li><li><button class="theme_button" style="background-color: #c0392b" data-color-dark="#c0392b" data-color-normal="#e74c3c">cinnabar</button></li></ul><script>const themeButtonList = [...document.querySelectorAll('.theme_button')]
+themeButtonList.map(themeButton => themeButton.addEventListener('click', e => {
+    document.documentElement.style.setProperty('--color-dark', themeButton.dataset.colorDark)
+    document.documentElement.style.setProperty('--color-normal', themeButton.dataset.colorNormal)
+}));
+// let colorList = {
+//     'cascade': {
+//     colorNormal: '#95A5A6',
+//     colorDark: '#7F8C8D',
+// },
+
+// 'zest': {
+//     colorNormal: '#E67E22',
+//     colorDark: '#D35400',
+// },
+
+// 'buttercup': {
+//     colorNormal: '#F1C40F',
+//     colorDark: '#F39C12',
+// },
+
+// 'pickled-bluewood': {
+//     colorNormal: '#34495E',
+//     colorDark: '#2C3E50',
+// },
+
+// 'wisteria': {
+//     colorNormal: '#9B59B6',
+//     colorDark: '#8E44AD',
+// },
+
+// 'shamrock': {
+//     colorNormal: '#2ECC71',
+//     colorDark: '#27AE60',
+// },
+
+// 'mountain-meadow': {
+//     colorNormal: '#1ABC9C',
+//     colorDark: '#16A085',
+// },
+
+// 'curious-blue': {
+//     colorNormal: '#3498db',
+//     colorDark: '#2980b9',
+// },
+
+// 'cinnabar': {
+//     colorNormal: '#e74c3c',
+//     colorDark: '#c0392b',
+// }
+// }
+</script></body></html>
