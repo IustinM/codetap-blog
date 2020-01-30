@@ -1,10 +1,17 @@
-.menu__list{
+.menu__wrapper{
     position: fixed;
-    bottom: 0;
-    right: 0;
     background-color:  $color-white;
+    bottom: 0;
+    right: -100%;
+    transition: 0.5s;
+    top: 0;
+}
+
+.menu__list{
+    
     list-style-type: none;
-    border: 0.1rem solid $color-dark;
+    margin-top: 2rem;
+    // border: 0.1rem solid $color-dark;
 }
 .menu__link{
     display: block;
@@ -15,8 +22,26 @@
 }
 .menu__item{
     
-    border-bottom: 0.1rem solid $color-dark;
+    // border-bottom: 0.1rem solid $color-dark;
     &:last-child{
         border-bottom: 0;
     }
+}
+.cb-menu{
+    position: fixed;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+}
+ #toggle-menu:checked {
+
+    & + .menu__wrapper{
+                right: 0%;
+            }
+    & + div + label[for="toggle-menu"]:before{
+        content: "\e900";
+    }
+ }
+.menu__hidden{
+    display: none;
 }

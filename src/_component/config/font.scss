@@ -10,13 +10,16 @@
   
   @font-face {
     font-family: 'codetap-blog';
-    src: url('/asset/font/codetap-blog.ttf?g9xsh7') format('truetype'), url('/asset/font/codetap-blog.woff?g9xsh7') format('woff'), url('/asset/font/codetap-blog.svg?g9xsh7#codetap-blog') format('svg');
+    src:
+      url('asset/font/codetap-blog.ttf?9pqb6a') format('truetype'),
+      url('asset/font/codetap-blog.woff?9pqb6a') format('woff'),
+      url('asset/font/codetap-blog.svg?9pqb6a#codetap-blog') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: block;
   }
   
-  [class^="cb-"],
-  [class*=" cb-"] {
+  [class^="cb-"], [class*=" cb-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'codetap-blog' !important;
     speak: none;
@@ -25,15 +28,28 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
+  
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .cb-cross:before {
+    content: "\e900";
+  }
   .cb-menu:before {
-    content: "\e9bd";
+    content: "\e901";
+  }
+  .cb-list:before {
+    content: "\e901";
+  }
+  .cb-options:before {
+    content: "\e901";
+  }
+  .cb-lines:before {
+    content: "\e901";
+  }
+  .cb-hamburger:before {
+    content: "\e901";
   }
   
-  .cb-cross:before {
-    content: "\ea0f";
-  }
